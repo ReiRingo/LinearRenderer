@@ -19,13 +19,3 @@ Built from the ground up to understand the graphics pipeline.
 - A C compiler (GCC/MinGW or Clang)
 
 - OpenGL 3.3+ drivers
-
-## BUILD
-
-```bash
-#clone the git 
-git clone --recursive [https://github.com/your-username/LinearRender.git](https://github.com/your-username/LinearRender.git)
-cd LinearRender
-cmake -B build
-cmake --build build
-```
