@@ -1,2 +1,5 @@
 # build files from good ol cmake
 build/
+
+# my lazy github pusher
+git_commit_all.bat

@@ -47,7 +47,7 @@ build cmake_object_order_depends_target_LinearRender: phony || cmake_object_orde
 build CMakeFiles/LinearRender.dir/src/core/window.c.obj: C_COMPILER__LinearRender_unscanned_ C$:/Users/Student/Desktop/LinearRender/src/core/window.c || cmake_object_order_depends_target_LinearRender
   DEP_FILE = CMakeFiles\LinearRender.dir\src\core\window.c.obj.d
   FLAGS = -std=gnu11
-  INCLUDES = -IC:/Users/Student/Desktop/LinearRender/include -IC:/Users/Student/Desktop/LinearRender/deps/glad/include -IC:/Users/Student/Desktop/LinearRender/deps/glfw/include -IC:/Users/Student/Desktop/LinearRender/deps/cglm/include -IC:/Users/Student/Desktop/LinearRender/src/core
+  INCLUDES = -IC:/Users/Student/Desktop/LinearRender/include -IC:/Users/Student/Desktop/LinearRender/deps/glad/include -IC:/Users/Student/Desktop/LinearRender/deps/glfw/include -IC:/Users/Student/Desktop/LinearRender/deps/cglm/include -IC:/Users/Student/Desktop/LinearRender/deps/stb/include -IC:/Users/Student/Desktop/LinearRender/src/core
   OBJECT_DIR = CMakeFiles\LinearRender.dir
   OBJECT_FILE_DIR = CMakeFiles\LinearRender.dir\src\core
   TARGET_SUPPORT_DIR = CMakeFiles\LinearRender.dir
@@ -55,7 +55,7 @@ build CMakeFiles/LinearRender.dir/src/core/window.c.obj: C_COMPILER__LinearRende
 build CMakeFiles/LinearRender.dir/src/core/shader.c.obj: C_COMPILER__LinearRender_unscanned_ C$:/Users/Student/Desktop/LinearRender/src/core/shader.c || cmake_object_order_depends_target_LinearRender
   DEP_FILE = CMakeFiles\LinearRender.dir\src\core\shader.c.obj.d
   FLAGS = -std=gnu11
-  INCLUDES = -IC:/Users/Student/Desktop/LinearRender/include -IC:/Users/Student/Desktop/LinearRender/deps/glad/include -IC:/Users/Student/Desktop/LinearRender/deps/glfw/include -IC:/Users/Student/Desktop/LinearRender/deps/cglm/include -IC:/Users/Student/Desktop/LinearRender/src/core
+  INCLUDES = -IC:/Users/Student/Desktop/LinearRender/include -IC:/Users/Student/Desktop/LinearRender/deps/glad/include -IC:/Users/Student/Desktop/LinearRender/deps/glfw/include -IC:/Users/Student/Desktop/LinearRender/deps/cglm/include -IC:/Users/Student/Desktop/LinearRender/deps/stb/include -IC:/Users/Student/Desktop/LinearRender/src/core
   OBJECT_DIR = CMakeFiles\LinearRender.dir
   OBJECT_FILE_DIR = CMakeFiles\LinearRender.dir\src\core
   TARGET_SUPPORT_DIR = CMakeFiles\LinearRender.dir
@@ -63,7 +63,31 @@ build CMakeFiles/LinearRender.dir/src/core/shader.c.obj: C_COMPILER__LinearRende
 build CMakeFiles/LinearRender.dir/src/core/mesh.c.obj: C_COMPILER__LinearRender_unscanned_ C$:/Users/Student/Desktop/LinearRender/src/core/mesh.c || cmake_object_order_depends_target_LinearRender
   DEP_FILE = CMakeFiles\LinearRender.dir\src\core\mesh.c.obj.d
   FLAGS = -std=gnu11
-  INCLUDES = -IC:/Users/Student/Desktop/LinearRender/include -IC:/Users/Student/Desktop/LinearRender/deps/glad/include -IC:/Users/Student/Desktop/LinearRender/deps/glfw/include -IC:/Users/Student/Desktop/LinearRender/deps/cglm/include -IC:/Users/Student/Desktop/LinearRender/src/core
+  INCLUDES = -IC:/Users/Student/Desktop/LinearRender/include -IC:/Users/Student/Desktop/LinearRender/deps/glad/include -IC:/Users/Student/Desktop/LinearRender/deps/glfw/include -IC:/Users/Student/Desktop/LinearRender/deps/cglm/include -IC:/Users/Student/Desktop/LinearRender/deps/stb/include -IC:/Users/Student/Desktop/LinearRender/src/core
+  OBJECT_DIR = CMakeFiles\LinearRender.dir
+  OBJECT_FILE_DIR = CMakeFiles\LinearRender.dir\src\core
+  TARGET_SUPPORT_DIR = CMakeFiles\LinearRender.dir
+
+build CMakeFiles/LinearRender.dir/src/core/file_util.c.obj: C_COMPILER__LinearRender_unscanned_ C$:/Users/Student/Desktop/LinearRender/src/core/file_util.c || cmake_object_order_depends_target_LinearRender
+  DEP_FILE = CMakeFiles\LinearRender.dir\src\core\file_util.c.obj.d
+  FLAGS = -std=gnu11
+  INCLUDES = -IC:/Users/Student/Desktop/LinearRender/include -IC:/Users/Student/Desktop/LinearRender/deps/glad/include -IC:/Users/Student/Desktop/LinearRender/deps/glfw/include -IC:/Users/Student/Desktop/LinearRender/deps/cglm/include -IC:/Users/Student/Desktop/LinearRender/deps/stb/include -IC:/Users/Student/Desktop/LinearRender/src/core
+  OBJECT_DIR = CMakeFiles\LinearRender.dir
+  OBJECT_FILE_DIR = CMakeFiles\LinearRender.dir\src\core
+  TARGET_SUPPORT_DIR = CMakeFiles\LinearRender.dir
+
+build CMakeFiles/LinearRender.dir/src/core/texture.c.obj: C_COMPILER__LinearRender_unscanned_ C$:/Users/Student/Desktop/LinearRender/src/core/texture.c || cmake_object_order_depends_target_LinearRender
+  DEP_FILE = CMakeFiles\LinearRender.dir\src\core\texture.c.obj.d
+  FLAGS = -std=gnu11
+  INCLUDES = -IC:/Users/Student/Desktop/LinearRender/include -IC:/Users/Student/Desktop/LinearRender/deps/glad/include -IC:/Users/Student/Desktop/LinearRender/deps/glfw/include -IC:/Users/Student/Desktop/LinearRender/deps/cglm/include -IC:/Users/Student/Desktop/LinearRender/deps/stb/include -IC:/Users/Student/Desktop/LinearRender/src/core
+  OBJECT_DIR = CMakeFiles\LinearRender.dir
+  OBJECT_FILE_DIR = CMakeFiles\LinearRender.dir\src\core
+  TARGET_SUPPORT_DIR = CMakeFiles\LinearRender.dir
+
+build CMakeFiles/LinearRender.dir/src/core/linear.c.obj: C_COMPILER__LinearRender_unscanned_ C$:/Users/Student/Desktop/LinearRender/src/core/linear.c || cmake_object_order_depends_target_LinearRender
+  DEP_FILE = CMakeFiles\LinearRender.dir\src\core\linear.c.obj.d
+  FLAGS = -std=gnu11
+  INCLUDES = -IC:/Users/Student/Desktop/LinearRender/include -IC:/Users/Student/Desktop/LinearRender/deps/glad/include -IC:/Users/Student/Desktop/LinearRender/deps/glfw/include -IC:/Users/Student/Desktop/LinearRender/deps/cglm/include -IC:/Users/Student/Desktop/LinearRender/deps/stb/include -IC:/Users/Student/Desktop/LinearRender/src/core
   OBJECT_DIR = CMakeFiles\LinearRender.dir
   OBJECT_FILE_DIR = CMakeFiles\LinearRender.dir\src\core
   TARGET_SUPPORT_DIR = CMakeFiles\LinearRender.dir
@@ -71,7 +95,7 @@ build CMakeFiles/LinearRender.dir/src/core/mesh.c.obj: C_COMPILER__LinearRender_
 build CMakeFiles/LinearRender.dir/deps/glad/src/glad.c.obj: C_COMPILER__LinearRender_unscanned_ C$:/Users/Student/Desktop/LinearRender/deps/glad/src/glad.c || cmake_object_order_depends_target_LinearRender
   DEP_FILE = CMakeFiles\LinearRender.dir\deps\glad\src\glad.c.obj.d
   FLAGS = -std=gnu11
-  INCLUDES = -IC:/Users/Student/Desktop/LinearRender/include -IC:/Users/Student/Desktop/LinearRender/deps/glad/include -IC:/Users/Student/Desktop/LinearRender/deps/glfw/include -IC:/Users/Student/Desktop/LinearRender/deps/cglm/include -IC:/Users/Student/Desktop/LinearRender/src/core
+  INCLUDES = -IC:/Users/Student/Desktop/LinearRender/include -IC:/Users/Student/Desktop/LinearRender/deps/glad/include -IC:/Users/Student/Desktop/LinearRender/deps/glfw/include -IC:/Users/Student/Desktop/LinearRender/deps/cglm/include -IC:/Users/Student/Desktop/LinearRender/deps/stb/include -IC:/Users/Student/Desktop/LinearRender/src/core
   OBJECT_DIR = CMakeFiles\LinearRender.dir
   OBJECT_FILE_DIR = CMakeFiles\LinearRender.dir\deps\glad\src
   TARGET_SUPPORT_DIR = CMakeFiles\LinearRender.dir
@@ -84,7 +108,7 @@ build CMakeFiles/LinearRender.dir/deps/glad/src/glad.c.obj: C_COMPILER__LinearRe
 #############################################
 # Link the static library libLinearRender.a
 
-build libLinearRender.a: C_STATIC_LIBRARY_LINKER__LinearRender_ CMakeFiles/LinearRender.dir/src/core/window.c.obj CMakeFiles/LinearRender.dir/src/core/shader.c.obj CMakeFiles/LinearRender.dir/src/core/mesh.c.obj CMakeFiles/LinearRender.dir/deps/glad/src/glad.c.obj || deps/glfw/src/libglfw3.a
+build libLinearRender.a: C_STATIC_LIBRARY_LINKER__LinearRender_ CMakeFiles/LinearRender.dir/src/core/window.c.obj CMakeFiles/LinearRender.dir/src/core/shader.c.obj CMakeFiles/LinearRender.dir/src/core/mesh.c.obj CMakeFiles/LinearRender.dir/src/core/file_util.c.obj CMakeFiles/LinearRender.dir/src/core/texture.c.obj CMakeFiles/LinearRender.dir/src/core/linear.c.obj CMakeFiles/LinearRender.dir/deps/glad/src/glad.c.obj || deps/glfw/src/libglfw3.a
   OBJECT_DIR = CMakeFiles\LinearRender.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -104,7 +128,7 @@ build cmake_object_order_depends_target_Demo: phony || cmake_object_order_depend
 build CMakeFiles/Demo.dir/src/main.c.obj: C_COMPILER__Demo_unscanned_ C$:/Users/Student/Desktop/LinearRender/src/main.c || cmake_object_order_depends_target_Demo
   DEP_FILE = CMakeFiles\Demo.dir\src\main.c.obj.d
   FLAGS = -std=gnu11
-  INCLUDES = -IC:/Users/Student/Desktop/LinearRender/include -IC:/Users/Student/Desktop/LinearRender/deps/glad/include -IC:/Users/Student/Desktop/LinearRender/deps/glfw/include -IC:/Users/Student/Desktop/LinearRender/deps/cglm/include
+  INCLUDES = -IC:/Users/Student/Desktop/LinearRender/include -IC:/Users/Student/Desktop/LinearRender/deps/glad/include -IC:/Users/Student/Desktop/LinearRender/deps/glfw/include -IC:/Users/Student/Desktop/LinearRender/deps/cglm/include -IC:/Users/Student/Desktop/LinearRender/deps/stb/include
   OBJECT_DIR = CMakeFiles\Demo.dir
   OBJECT_FILE_DIR = CMakeFiles\Demo.dir\src
   TARGET_SUPPORT_DIR = CMakeFiles\Demo.dir

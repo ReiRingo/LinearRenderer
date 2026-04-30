@@ -1,55 +1,38 @@
-#include "window.h"
-#include "shader.h"
-#include "mesh.h"
+#include "linear.h"
 #include <stdio.h>
 
-static inline lr_window_t* window_start() {
-    if (!glfwInit()) {
-        printf("FAILED TO INITIALISE GLFW\n");
-        return NULL;
-    }
-
-    lr_window_t* example = lr_window_create(640, 480, "Test");
-
-    if (!example) {
-        printf("FAILED TO CREATE WINDOW\n");
-        return NULL;
-    }
-
-    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
-        printf("FAILED TO INITIALISE GLAD\n");
-        return NULL;
-    }
-
-    glViewport(0, 0, 640, 480);
-
-    return example;
-}
 
 int main(int argc, char* argv[]) {
-    lr_window_t* ex = window_start();
+    lr_window* ex = lin_window_init(640, 480, "Const Char* Name");
 
     if (!ex) return -1;
 
-    lr_vertex_t verts[] = {
-        {-0.5f, -0.5f,  0.0f}, // bottom left
-        { 0.5f, -0.5f,  0.0f}, // bottom right
-        { 0.0f,  0.5f,  0.0f}  // top center
+    // updated Vertices (X, Y, Z, U, V)
+    lr_vertex verts[] = {
+        {-0.5f, -0.5f, 0.0f,  0.0f, 0.0f }, // Bottom Left
+        { 0.5f, -0.5f, 0.0f,  1.0f, 0.0f }, // Bottom Right
+        { 0.5f,  0.5f, 0.0f,  1.0f, 1.0f }, // Top Right
+        {-0.5f,  0.5f, 0.0f,  0.0f, 1.0f }  // Top Left
     };
-    unsigned int indices[] = { 0, 1, 2 };
+    unsigned int indices[] = { 0, 1, 2, 2, 3, 0 }; // two triangles for a square
 
-    lr_shader_t shader   = lr_shader_load("shaders/default.vert", "shaders/default.frag");
-    lr_mesh_t   triangle = lr_mesh_create(verts, 3, indices, 3);
-    
+    lr_shader shader   = lr_shader_load("shaders/default.vert", "shaders/default.frag");
+    lr_mesh   triangle = lr_mesh_create(verts, 4, indices, 6);
+
+    // load the texture (madobe nanami)
+    lr_texture my_tex = lr_texture_load("assets/test_image.png");
+
     while(!lr_window_should_close(ex)) {
-        // Render stuff
-        glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
         lr_shader_use(shader);
+        
+        // bind texture 0
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, my_tex.id);
+        
         lr_mesh_draw(triangle);
 
-        // Swap and Poll
         lr_window_poll(ex);
     }
 

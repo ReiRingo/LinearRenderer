@@ -3,9 +3,9 @@
 
 typedef struct {
     unsigned int id;
-} lr_shader_t;
+} lr_shader;
 
-lr_shader_t  lr_shader_load(const char* vert_path, const char* frag_path);
-void lr_shader_use(lr_shader_t shd);
+lr_shader  lr_shader_load(const char* vert_path, const char* frag_path);
+void       lr_shader_use(lr_shader shd);
 
 #endif

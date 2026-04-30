@@ -1,6 +1,8 @@
 #include "window.h"
 #include "shader.h"
 #include "file_util.h"
+#include <stdio.h>
+#include <malloc.h>
 
 static unsigned int lr_compile_shader(unsigned int type, const char* source) {
     unsigned int id = glCreateShader(type);
@@ -52,11 +54,11 @@ static unsigned int lr_create_shd_program(const char* vertexSource, const char* 
     return program;
 }
 
-lr_shader_t lr_shader_load(const char* vert_path, const char* frag_path) {
+lr_shader lr_shader_load(const char* vert_path, const char* frag_path) {
     char* v_src = lr_file_read(vert_path);
     char* f_src = lr_file_read(frag_path);
     
-    lr_shader_t shader;
+    lr_shader shader;
     shader.id = lr_create_shd_program(v_src, f_src);
     
     free(v_src);
@@ -64,4 +66,4 @@ lr_shader_t lr_shader_load(const char* vert_path, const char* frag_path) {
     return shader;
 }
 
-void lr_shader_use(lr_shader_t shd) { glUseProgram(shd.id); }
+void lr_shader_use(lr_shader shd) { glUseProgram(shd.id); }

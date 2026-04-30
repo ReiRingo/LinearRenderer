@@ -13,13 +13,20 @@ set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 set(GLFW_INSTALL OFF CACHE BOOL "" FORCE)
 
-add_subdirectory(deps/glfw) # <- CRITICAL: this tells CMake to buikd GLFW
+add_subdirectory(deps/glfw) # <- CRITICAL: this tells CMake to build GLFW
 
 # library sources
 set(SOURCES
+    # core
     src/core/window.c 
     src/core/shader.c 
     src/core/mesh.c 
+    src/core/file_util.c
+    src/core/texture.c 
+    
+    src/core/linear.c # the heart
+
+    # deps
     deps/glad/src/glad.c 
 )
 
@@ -32,6 +39,7 @@ target_include_directories(LinearRender PUBLIC
     deps/glad/include
     deps/glfw/include
     deps/cglm/include
+    deps/stb/include # 4/30/2026
 )
 
 # internal headers for the library itself
@@ -50,3 +58,5 @@ target_link_libraries(Demo PRIVATE LinearRender)
 
 file(COPY "${CMAKE_SOURCE_DIR}/shaders" 
      DESTINATION "${CMAKE_BINARY_DIR}")
+file(COPY "${CMAKE_SOURCE_DIR}/assets" 
+     DESTINATION "${CMAKE_BINARY_DIR}") # just for debugging

@@ -3,8 +3,8 @@
 
 // window.h definitions
 
-lr_window_t* lr_window_create(int width, int height, const char* caption) {
-    lr_window_t* win = malloc(sizeof(lr_window_t));
+lr_window* lr_window_create(int width, int height, const char* caption) {
+    lr_window* win = malloc(sizeof(lr_window));
 
     // * GLFW hints
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
@@ -26,16 +26,16 @@ lr_window_t* lr_window_create(int width, int height, const char* caption) {
     return win;
 }
 
-int lr_window_should_close(lr_window_t* win) {
+int lr_window_should_close(lr_window* win) {
     return glfwWindowShouldClose(win->handle);
 }
 
-void lr_window_poll(lr_window_t* win) {
+void lr_window_poll(lr_window* win) {
     glfwPollEvents();
     glfwSwapBuffers(win->handle);
 }
 
-void lr_window_destroy(lr_window_t* win) {
+void lr_window_destroy(lr_window* win) {
     glfwDestroyWindow(win->handle);
     free(win);
 }
