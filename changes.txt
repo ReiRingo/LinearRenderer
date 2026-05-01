@@ -1,4 +1,5 @@
 # 4/30/2026
+
 - recently learned that _t is a suffix owned by the standard UNIX-ish stuf.
   so I have decided to rename many symbols for it to avoid clash.
 
@@ -9,3 +10,10 @@
   updated mesh to handle the u and v of lr_vertex
 
 - added a small high level wrapper called linear.h
+
+# 5/1/2026
+
+- expanded the linear.h and linear.c to handle:
+  window closing
+
+- NOT FINISHED: added projection matrix

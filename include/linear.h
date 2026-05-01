@@ -42,11 +42,13 @@
 #include "texture.h"
 #include "file_util.h"
 
+#include <cglm/cglm.h>
+
 #include <stdio.h>
 #include <stdbool.h>
 
 // we use the lin poorman's prefix here
 // and keep lr (linear render) for the raw stuff
 lr_window* lin_window_init(int width, int height, const char* caption);
-
+bool       lin_window_close();
 #endif
