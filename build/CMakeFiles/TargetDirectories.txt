@@ -1,0 +1,10 @@
+C:/Users/Student/Desktop/LinearRender/build/CMakeFiles/LinearRender.dir
+C:/Users/Student/Desktop/LinearRender/build/CMakeFiles/Demo.dir
+C:/Users/Student/Desktop/LinearRender/build/CMakeFiles/edit_cache.dir
+C:/Users/Student/Desktop/LinearRender/build/CMakeFiles/rebuild_cache.dir
+C:/Users/Student/Desktop/LinearRender/build/deps/glfw/CMakeFiles/edit_cache.dir
+C:/Users/Student/Desktop/LinearRender/build/deps/glfw/CMakeFiles/rebuild_cache.dir
+C:/Users/Student/Desktop/LinearRender/build/deps/glfw/src/CMakeFiles/glfw.dir
+C:/Users/Student/Desktop/LinearRender/build/deps/glfw/src/CMakeFiles/update_mappings.dir
+C:/Users/Student/Desktop/LinearRender/build/deps/glfw/src/CMakeFiles/edit_cache.dir
+C:/Users/Student/Desktop/LinearRender/build/deps/glfw/src/CMakeFiles/rebuild_cache.dir
