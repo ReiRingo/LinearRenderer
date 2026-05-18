@@ -7,7 +7,7 @@
 
 lr_texture lr_texture_load(const char* path) {
     lr_texture tex = {0};
-    stbi_set_flip_vertically_on_load(true); 
+    stbi_set_flip_vertically_on_load(false); 
     
     unsigned char* data = stbi_load(path, &tex.width, &tex.height, &tex.channels, 0);
     if (data) {

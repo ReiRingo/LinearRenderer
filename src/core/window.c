@@ -33,6 +33,12 @@ int lr_window_should_close(lr_window* win) {
 void lr_window_poll(lr_window* win) {
     glfwPollEvents();
     glfwSwapBuffers(win->handle);
+    
+    glfwGetWindowSize(win->handle, &win->width, &win->height);
+    
+    int fb_w, fb_h;
+    glfwGetFramebufferSize(win->handle, &fb_w, &fb_h);
+    glViewport(0, 0, fb_w, fb_h);
 }
 
 void lr_window_destroy(lr_window* win) {
